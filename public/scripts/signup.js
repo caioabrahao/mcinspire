@@ -1,5 +1,4 @@
 import { auth } from './firebase-config.js';
-import { createUserWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
 
 // DOM Elements
 const signupForm = document.getElementById('signupForm');
@@ -19,18 +18,18 @@ signupForm.addEventListener('submit', async (e) => {
     }
 
     try {
-        await createUserWithEmailAndPassword(auth, email, password);
-        // TODO: Store additional user data (username) in Firebase
+        // Create the user account
+        const userCredential = await auth.createUserWithEmailAndPassword(email, password);
+        
+        // Add the display name (username)
+        await userCredential.user.updateProfile({
+            displayName: username
+        });
+
+        console.log('User created successfully:', userCredential.user);
         window.location.href = './success.html';
     } catch (error) {
+        console.error('Signup error:', error);
         alert('Signup failed: ' + error.message);
-    }
-});
-
-// Check auth state
-onAuthStateChanged(auth, (user) => {
-    if (user) {
-        // User is already logged in, redirect to home
-        window.location.href = './index.html';
     }
 });
