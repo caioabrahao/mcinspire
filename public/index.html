@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCInspire - Home</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">MCInspire</div>
+        <ul>
+            <li><a href="./index.html" class="active">Home</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./signup.html" class="cta-nav">Sign Up</a></li>
+            <li><a href="./login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to MCInspire</h1>
+            <p>Discover amazing Minecraft builds and get inspired</p>
+            <a href="./gallery.html" class="cta-button">Explore Gallery</a>
+        </div>
+    </section>
+
+    <section id="highlights">
+        <h2>Featured Builds</h2>
+        <div class="carousel">
+            <button class="carousel-button prev">&#8592;</button>
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="./images/minecraft-castle.png" alt="Featured Build 1">
+                    <div class="slide-info">
+                        <h3>Epic Castle</h3>
+                        <p>By: MasterBuilder</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="./images/modern-house.jpg" alt="Featured Build 2">
+                    <div class="slide-info">
+                        <h3>Fantasy Tree House</h3>
+                        <p>By: WorldCreator</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="./images/tower-build.jpg" alt="Featured Build 3">
+                    <div class="slide-info">
+                        <h3>Modern City</h3>
+                        <p>By: UrbanMC</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-button next">&#8594;</button>
+        </div>
+    </section>
+
+    <section id="features">
+        <h2>Why Join MCInspire?</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <div class="card-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Get Inspired</h3>
+                <p>Browse through thousands of amazing Minecraft builds from talented creators worldwide. Find your next building project inspiration!</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-icon">
+                    <i class="fas fa-upload"></i>
+                </div>
+                <h3>Share Your Creations</h3>
+                <p>Show off your best builds to the community. Upload screenshots, get feedback, and inspire others with your unique designs.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Join the Community</h3>
+                <p>Connect with fellow builders, share tips and tricks, and be part of a growing community of Minecraft enthusiasts.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MCInspire. All rights reserved.</p>
+    </footer>
+
+    <script src="/scripts/carousel.js"></script>
+    <script type="module" src="./scripts/nav.js"></script>
+</body>
+</html> 

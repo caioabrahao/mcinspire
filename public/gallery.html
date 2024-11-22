@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCInspire - Gallery</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">MCInspire</div>
+        <ul>
+            <li><a href="./index.html" class="active">Home</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./signup.html" class="cta-nav">Sign Up</a></li>
+            <li><a href="./login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <section id="gallery">
+        <h2>Inspiration Gallery</h2>
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="medieval">Medieval</button>
+            <button class="filter-btn" data-filter="modern">Modern</button>
+            <button class="filter-btn" data-filter="fantasy">Fantasy</button>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="medieval">
+                <img src="images/minecraft-castle.png" alt="Medieval Castle">
+                <div class="overlay">
+                    <h3>Epic Castle</h3>
+                    <p>By: MasterBuilder</p>
+                    <span class="category">Medieval</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="modern">
+                <img src="images/modern-house.jpg" alt="Modern House">
+                <div class="overlay">
+                    <h3>Modern Villa</h3>
+                    <p>By: ModernArchitect</p>
+                    <span class="category">Modern</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="medieval">
+                <img src="images/tower-build.jpg" alt="Medieval Tower">
+                <div class="overlay">
+                    <h3>Wizard Tower</h3>
+                    <p>By: TowerMaster</p>
+                    <span class="category">Medieval</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="fantasy">
+                <img src="images/minecraft-castle.png" alt="Fantasy Castle">
+                <div class="overlay">
+                    <h3>Crystal Palace</h3>
+                    <p>By: FantasyBuilder</p>
+                    <span class="category">Fantasy</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="modern">
+                <img src="images/modern-house.jpg" alt="Modern Building">
+                <div class="overlay">
+                    <h3>City Skyscraper</h3>
+                    <p>By: UrbanMC</p>
+                    <span class="category">Modern</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="fantasy">
+                <img src="images/tower-build.jpg" alt="Fantasy Tower">
+                <div class="overlay">
+                    <h3>Enchanted Spire</h3>
+                    <p>By: MagicBuilder</p>
+                    <span class="category">Fantasy</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MCInspire. All rights reserved.</p>
+    </footer>
+
+    <script src="./scripts/gallery.js"></script>
+    <script type="module" src="./scripts/nav.js"></script>
+</body>
+</html> 
